@@ -22,4 +22,9 @@ $(document).ready(function(){
       $(this).addClass('error');
   });
   $('.modal').on('click', modalout);
+  $('input').on('click', function(eventObject){
+    eventObject.stopPropagation();})
+  $('.submit').on('click', function(eventObject){
+    eventObject.stopPropagation();
+  })
 })
